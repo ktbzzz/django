@@ -4,5 +4,6 @@ from django.urls import path, include  # <-- Make sure you have both of these im
 urlpatterns = [
     path('polling/', include('polling.urls')),  # <-- Add this
     path('admin/', admin.site.urls),
-    path('', include('blogging.urls'))
+    path('', include('blogging.urls')),
+    path('accounts/', include('allauth.urls')),
 ]
